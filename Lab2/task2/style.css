@@ -1,0 +1,84 @@
+*{
+        font-family: Arial,sans-serif;
+font-weight: 500;
+}
+body{
+    font-family: Arial,sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left h1 span{
+    color: rgb(201, 90, 109);
+
+}
+.right{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right p{
+    color: black;
+    font-size: 15px;
+}
+.line{
+    width: 1px;
+    background-color: #979292;
+    height: 80vh;
+    margin: 0 40px;
+}
+
+input[type=email],input[type=password]{
+    border:1px solid #979292;
+    border-radius: 7px;
+    padding: 5px;
+    width: 100%;
+    margin: 1%;
+
+
+}
+.login-bt{
+    background-color: rgb(121, 160, 228);
+    border-radius: 15px;
+    padding: 5px;
+    margin: 1%;
+    width: 100%;
+    border-color: rgb(86, 146, 229);
+    color: white;
+}
+.forgot{
+    text-align: center;
+    color: black;
+}
+.facebook{
+    border: 2px solid #bebbbb;
+    border-radius: 15px;
+    width:100%;
+        background-color: white;
+
+    margin: 1%;
+    color: black;
+    padding: 5px;
+}
+.createacc{
+     color: #1b5e8a;
+    border: 2px solid #64b0e3;
+    border-radius: 15px;
+    width:100%;
+    margin: 1%;
+    background-color: white;
+   
+    padding: 5px; 
+}
