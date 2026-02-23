@@ -1,0 +1,22 @@
+<div class="category-buttons">
+  <button 
+    *ngFor="let category of categories" 
+    (click)="selectCategory(category.id)"
+    [class.active]="selectedCategoryId === category.id">
+    {{ category.name }}
+  </button>
+</div>
+
+<div class="products-container">
+  <div class="product-card" *ngFor="let product of filteredProducts">
+    <img [src]="product.image" alt="{{ product.name }}" class="product-image"/>
+    <div class="product-info">
+      <h3 class="product-name">{{ product.name }}</h3>
+      <p class="product-description">{{ product.description }}</p>
+      <div class="product-bottom">
+        <div class="price">{{ product.price | number:'1.0-0' }} ₸</div>
+        <a [href]="product.link" target="_blank" class="buy-button">Сатып алу</a>
+      </div>
+    </div>
+  </div>
+</div>
