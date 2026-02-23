@@ -1,0 +1,152 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 15px;
+}
+.start{
+    text-align: center;
+
+}
+.start h1{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;}
+.free-bt{
+    padding: 5px;
+    border-radius: 2px;
+    color: white;
+    background-color: black;
+        margin: 10px;
+
+    width:30%;
+}
+.pricing-class{
+    display: flex;
+    justify-content: center;
+        margin: 10px;
+
+    
+}
+.pricy-class{
+box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+border-radius: 5px;
+width: 25%;
+justify-content: center;
+margin: 10px;
+border: 1px solid #ddd;
+
+}
+.pricy-class h2{
+    text-align: center;
+}
+.pricy-class p{
+    text-align: center;
+}
+.price{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+.price span{
+    font-size: 10px;
+     font-weight:6px ;
+     color: grey;
+     text-align: start;
+}
+
+
+
+
+.sub-btn{
+   
+    display: block;
+    width: 70%;
+    margin: 12px auto;
+    padding: 10px;
+    border: 1px solid #0b0b0b;
+    border-radius: 10px;
+    font-weight: bold;
+    background: white;
+    cursor: pointer;
+
+
+}
+.team-btn{
+    
+
+    display: block;
+    width: 70%;
+    margin: 12px auto;
+    padding: 10px;
+    border: 1px solid #0b0b0b;
+    border-radius: 10px;
+    font-weight: bold;
+    background: rgb(11, 11, 11);
+    cursor: pointer;
+    color: white;
+
+
+}
+input[type="text"]{
+    border-radius: 30px;
+    width: 30%;
+    border: 1px solid #ddd;
+    cursor: pointer;
+    display: block;
+    margin: 12px auto;
+    padding: 5px;
+    
+}
+.together{display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+.trial-btn,
+.sales-btn{
+    width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.trial-btn{
+    background: black;
+    color: white;
+    border: none;
+}
+
+.sales-btn{
+    background: white;
+    color: black;
+    border: 1px solid black;
+}
+
+
+.add-ons{
+    text-align: center;
+}
+.add-ons h2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.addon-grid{
+     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 12px;
+}
+.add-oncard{
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    
+}
+.add-oncard a {
+    color:black;
+    text-decoration: none;
+    font-weight: 600;
+}
