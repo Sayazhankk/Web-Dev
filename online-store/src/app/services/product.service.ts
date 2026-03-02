@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Category } from '../models/category.model';
-import { Product } from '../models/product.model';
+import { Category } from '../models/category';
+import { Product } from '../models/product';
 
 @Injectable({
   providedIn: 'root'
@@ -11,7 +11,8 @@ export class ProductService {
     { id: 1, name: 'Skincare' },
     { id: 2, name: 'Haircare' },
     { id: 3, name: 'Cosmetics' },
-    { id: 4, name: 'Manicure' }
+    { id: 4, name: 'Manicure' },
+    { id: 5, name: 'Pedicure' }
   ];
 
   products: Product[] = [

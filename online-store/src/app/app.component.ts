@@ -1,7 +1,10 @@
 import { Component } from '@angular/core';
+import { ProductListComponent } from './product-list/product-list.component';
 
 @Component({
   selector: 'app-root',
-  template: `<app-product-list></app-product-list>`,
+  standalone: true,
+  imports: [ProductListComponent], // ← ОБЯЗАТЕЛЬНО
+  template: `<app-product-list></app-product-list>`
 })
 export class AppComponent {}

@@ -1,15 +1,19 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { ProductService } from '../services/product.service';
-import { Product } from '../models/product.model';
-import { Category } from '../models/category.model';
+import { Category } from '../models/category';
+import { Product } from '../models/product';
 
 @Component({
   selector: 'app-product-list',
+  standalone: true,
+  imports: [CommonModule],
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  @Input() categoryId: number | null = null;  // таңдаулы категория
+
+  @Input() categoryId: number | null = null;
   categories: Category[] = [];
   products: Product[] = [];
   filteredProducts: Product[] = [];
