@@ -1,0 +1,46 @@
+.detail-container {
+  max-width: 600px;
+  margin: 60px auto; /* центр по горизонтали */
+  background: #f8f3ff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.detail-container h2 {
+  color: #5b3fa8;
+  margin-bottom: 10px;
+}
+
+.detail-container input {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #e0d4f7;
+  width: 80%;
+  margin: 15px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 15px;
+}
+
+button,
+.button-link {
+  background-color: #d6c7ff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+button:hover,
+.button-link:hover {
+  background-color: #c2b0f5;
+}

@@ -1,0 +1,29 @@
+.album {
+  background-color: #f8f3ff;
+  border: 1px solid #e6dbff;
+  padding: 12px 15px;
+  margin: 8px 0;
+  border-radius: 8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album a {
+  text-decoration: none;
+  color: #5b3fa8;
+}
+
+.album button {
+  background-color: #d6c7ff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.album button:hover {
+  background-color: #c2b0f5;
+}

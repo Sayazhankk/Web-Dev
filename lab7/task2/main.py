@@ -1,19 +1,17 @@
-# main.py
-
-from models import Animal, Dog, Cat
+from models import JoJo, Jolyne, Jotaro
 
 
 def main():
-    animal1 = Animal("Generic Animal", 5, "gray")
-    dog1 = Dog("Buddy", 3, "brown", "Labrador")
-    cat1 = Cat("Misty", 2, "white", True)
+    jojo1 = JoJo("Joseph", 25, "Hermit Purple")
+    jolyne1 = Jolyne("Jolyne", 20, "Stone Ocean", "Stone Free")
+    jotaro1 = Jotaro("Jotaro", 23, "The Crusaders", "Joseph")
 
-    animals = [animal1, dog1, cat1]
+    jojos = [jojo1, jolyne1, jotaro1]
 
-    for animal in animals:
-        print(animal)
-        print(animal.eat())
-        print(animal.speak())
+    for jojo in jojos:
+        print(jojo)
+        print(jojo.fight())
+        print(jojo.speak())
         print()
 
 

@@ -1,46 +1,41 @@
-# models.py
-
-class Animal:
-    def __init__(self, name, age, color):
+class JoJo:
+    def __init__(self, name, age, part):
         self.name = name
         self.age = age
-        self.color = color
+        self.part = part
 
-    def eat(self):
-        return f"{self.name} is eating."
+    def fight(self):
+        return f"{self.name} is fighting."
 
     def speak(self):
-        return f"{self.name} makes a sound."
+        return f"{self.name} :ORA ORA."
 
     def __str__(self):
-        return f"Animal(name={self.name}, age={self.age}, color={self.color})"
+        return f"JoJo(name={self.name}, age={self.age}, part={self.part})"
+    
+class Jolyne(JoJo):
+     def __init__(self, name, age, part, stand):
+        super().__init__(name, age, part)
+        self.stand = stand
 
+     def speak(self):  
+        return f"{self.name} says:ORA ORA !"
 
-class Dog(Animal):
-    def __init__(self, name, age, color, breed):
-        super().__init__(name, age, color)
-        self.breed = breed
+     def result(self):
+        return f"{self.name} lost battle."
 
-    def speak(self):  # Method overriding
-        return f"{self.name} says: Woof!"
+     def __str__(self):
+        return f"Jolyne(name={self.name}, age={self.age}, part={self.part}, stand={self.stand})"
+class Jotaro(JoJo):
+     def __init__(self, name, age, part, grandfather):
+        super().__init__(name, age, part)
+        self.grandfather = grandfather
 
-    def fetch(self):
-        return f"{self.name} is fetching a ball."
+     def speak(self):  
+        return f"{self.name} says: ORA ORA!"
 
-    def __str__(self):
-        return f"Dog(name={self.name}, age={self.age}, color={self.color}, breed={self.breed})"
+     def feature(self):
+        return f"{self.name} has stopped the time for 5 seconds."
 
-
-class Cat(Animal):
-    def __init__(self, name, age, color, indoor):
-        super().__init__(name, age, color)
-        self.indoor = indoor
-
-    def speak(self):  # Method overriding
-        return f"{self.name} says: Meow!"
-
-    def climb(self):
-        return f"{self.name} is climbing."
-
-    def __str__(self):
-        return f"Cat(name={self.name}, age={self.age}, color={self.color}, indoor={self.indoor})"
+     def __str__(self):
+        return f"Jotaroo(name={self.name}, age={self.age}, part={self.part}, grandfather={self.grandfather})"

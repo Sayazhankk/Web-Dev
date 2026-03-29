@@ -1,0 +1,7 @@
+{
+  "/hybridaction": {
+    "target": "http://your-real-backend-api.com",
+    "secure": false,
+    "changeOrigin": true
+  }
+}

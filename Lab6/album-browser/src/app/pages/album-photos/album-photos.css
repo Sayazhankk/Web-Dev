@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 10px;
+}
+
+.photo img {
+  width: 100%;
+}
+
+h2 {
+  color: #5b3fa8;
+}
+
+input {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid #e0d4f7;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #d6c7ff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #c2b0f5;
+}

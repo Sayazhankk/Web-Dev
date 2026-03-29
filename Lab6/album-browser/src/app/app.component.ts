@@ -1,16 +1,19 @@
-/// app.component.ts
-import { Component } from '@angular/core'; // <-- must be @angular/core
-import { provideHttpClient } from '@angular/common/http';
-import { provideRouter } from '@angular/router';
-import { routes } from './app.routes';
+import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  template: '<router-outlet></router-outlet>',
-  providers: [
-    provideHttpClient(), 
-    provideRouter(routes)
-  ]
+  imports: [RouterModule],
+  template: `
+    <nav>
+      <a routerLink="/home" routerLinkActive="active-link">Home</a> | 
+      <a routerLink="/about" routerLinkActive="active-link">About</a> | 
+      <a routerLink="/albums" routerLinkActive="active-link">Albums</a>
+    </nav>
+    <hr>
+    <router-outlet></router-outlet>
+  `,
+  styles: [`.active-link { font-weight: bold; color: blue; }`]
 })
 export class AppComponent {}

@@ -1,0 +1,27 @@
+/* Общий фон */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  gap: 20px;
+  padding: 15px 25px;
+  background-color: #f3e8ff; /* нежно-сиреневый */
+  border-bottom: 1px solid #e0d4f7;
+}
+
+nav a {
+  text-decoration: none;
+  color: #6b46c1;
+  font-weight: 500;
+}
+
+nav a.active {
+  font-weight: bold;
+  border-bottom: 2px solid #6b46c1;
+}
